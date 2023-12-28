@@ -1,0 +1,436 @@
+@import url(./fonts.css);
+:root{
+    --black: black;
+    --j-r: 'JosefinSans-Regula';
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+.container{
+    max-width: 600px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+body{
+    background: url(../img/body__bg.jpg) no-repeat center left / cover;
+    height: 900px;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 10px;
+    max-width: 600px;
+    width: 100%;
+}
+
+
+
+.header .header__logo__link{
+    width: 150px;
+}
+
+.header .nav__list{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 600px;
+    width: 100%;
+    text-align: center;
+}
+.header .nav__list span{
+    display: block;
+    margin-top: 5px;
+    font-size: 15px;
+}
+.header .nav__list .nav__link{
+    font-family: var(--j-r);
+    font-weight: 400;
+    color: white;
+    text-transform: uppercase;
+    font-size: 17px;
+    text-align: center;
+    transition: 0.3s;
+    
+}
+.header .nav__list .nav__link:hover{
+    color: gold;
+    text-shadow: 3px 0px 20px gold;
+}
+.header .nav__list .nav__link:active{
+    color: gold;
+    text-shadow: 3px 0px 20px gold;
+}
+
+
+
+
+
+.header .number__box{
+    max-width: 450px;
+    width: 100%;
+    height: 80px;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    backdrop-filter: blur(10px);
+    box-shadow:  0px 0px 9px 1px gold;
+    animation-name: doston__2;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.number__box .number__box__text{
+    font-family: var(--j-r);
+    font-weight: 800;
+    color: gold;
+    text-transform: uppercase;
+    font-size: 20px;
+    letter-spacing: 2px;
+    margin-bottom: 4px;
+    
+}
+.number__box .number__box__link{
+    font-family: var(--j-r);
+    font-weight: 800;
+    color: white;
+    text-transform: uppercase;
+    font-size: 17px;
+    letter-spacing: 4px;
+    transition: 0.3s;
+    
+}
+.number__box .number__box__link:hover{
+    color: gold;
+    text-shadow: 3px 0px 20px gold;
+}
+.number__box .number__box__link:active{
+    color: gold;
+    text-shadow: 3px 0px 20px gold;
+}
+.number__box .number__box__icons{
+    position: absolute;
+    top: 25px;
+    left: 20px;
+    color: white;
+    font-size: 30px;
+    transition: 0.3s;
+    animation-name: doston;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-delay: 3s;
+}
+.number__box .number__box__icons:hover{
+    color: gold;
+}
+.number__box .number__box__icons:active{
+    color: gold;
+}
+
+.number__box:nth-last-child(3){
+    margin-top: 15px;
+}
+.number__box:nth-last-child(2){
+    margin-top: 15px;
+}
+.number__box:nth-last-child(1){
+    margin-top: 15px;
+}
+.number__box:nth-last-child(4){
+    margin-top: 15px;
+}
+.number__box:nth-last-child(5){
+    margin-top: 15px;
+}
+.number__box:nth-last-child(6){
+    margin-top: 30px;
+}
+
+.number__box__telegram{
+    max-width: 450px;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+    position: relative;
+    backdrop-filter: blur(10px);
+    box-shadow:  0px 0px 9px 1px gold;
+    border-radius: 30px;
+    animation-name: doston__2;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+
+.number__box__telegram .number__box__text{
+    font-family: var(--j-r);
+    font-weight: 800;
+    color: gold;
+    text-transform: uppercase;
+    font-size: 20px;
+    letter-spacing: 2px;
+    margin-bottom: 4px;
+}
+
+.number__box__telegram .number__box__link{
+    font-family: var(--j-r);
+    font-weight: 800;
+    color: rgba(255, 255, 255, 0.864);
+    text-transform: uppercase;
+    font-size: 15px;
+    letter-spacing: 2px;
+    transition: 0.3s;
+}
+.number__box__telegram .number__box__link:hover{
+    color: gold;
+    text-shadow: 3px 0px 20px gold;
+}
+.number__box__telegram .number__box__link:active{
+    color: gold;
+    text-shadow: 3px 0px 20px gold;
+}
+.number__box__telegram span{
+    position: absolute;
+    top: 25px;
+    left: 15px;
+    color: white;
+    font-size: 45px;
+    animation-name: doston;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-delay: 3s;
+}
+.number__box__telegram span:hover{
+    color: gold;
+}
+.number__box__telegram span:active{
+    color: gold;
+}
+
+
+
+.number__box__location{
+    max-width: 450px;
+    width: 100%;
+    height: 150px;
+    margin-top: 50px;
+    backdrop-filter: blur(10px);
+    box-shadow:  0px 0px 9px 1px gold;
+    border-radius: 30px;
+    margin-bottom: 50px;
+    animation-name: doston__2;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.number__box__location iframe{
+    max-width: 450px;
+    width: 100%;
+    height: 150px;
+    border-radius: 30px;
+    padding: 10px;
+}
+
+
+.header .header__footer__text{
+    font-family: var(--j-r);
+    font-weight: 400;
+    color: white;
+    font-size: 15px;
+    text-transform: capitalize;
+}
+.header .header__footer__text span{
+    text-transform: uppercase;
+    color: gold;
+    animation-name: doston__4;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+.header .header__footer__text span i{
+    color: white;
+    animation-name: doston__3;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes doston{
+    from{
+        transform: rotate(-360deg);
+        color: white;
+    }
+    to{
+        transform: rotate(360deg);
+        color: gold;
+    }
+}
+
+@keyframes doston__2{
+    from{
+        box-shadow:  0px 0px 9px 1px gold;
+        
+    }
+    to{
+        box-shadow:  0px 0px 9px 1px white;
+        
+    }
+}
+@keyframes doston__3{
+    from{
+        color: white;
+        
+    }
+    to{
+        color: gold
+        
+    }
+}
+@keyframes doston__4{
+    from{
+        color: gold;
+        
+    }
+    to{
+        color: white
+        
+    }
+}
+
+
+
+@media (max-width: 460px){
+    .header .nav__list .nav__link {
+        color: white;
+        font-size: 16px;
+    }
+
+    .number__box:nth-last-child(6) {
+        margin-top: 20px;
+    }
+    .header .number__box {
+        max-width: 450px;
+        width: 100%;
+        height: 70px;
+        border-radius: 30px;
+    }
+    .number__box .number__box__text {
+        font-size: 17px;
+        letter-spacing: 2px;
+        margin-bottom: 4px;
+    }
+    .number__box .number__box__link {
+        font-size: 15px;
+        letter-spacing: 2px;
+    }
+    .number__box .number__box__icons {
+        position: absolute;
+        top: 20px;
+        left: 20px;;
+        font-size: 25px;
+    }
+    .number__box__telegram .number__box__text{
+        font-size: 17px;
+        letter-spacing: 2px;
+        margin-bottom: 4px
+    }
+    .number__box__telegram .number__box__link {
+        font-size: 15px;
+        letter-spacing: 2px;
+    }
+    .number__box__telegram {
+        max-width: 450px;
+        width: 100%;
+        height: 90px;
+    }
+    .number__box__telegram span {
+        position: absolute;
+        top: 25px;
+        left: 15px;
+        font-size: 35px;
+    }
+
+    .header .header__footer__text {
+        font-size: 14px;
+    }
+    
+    .number__box__location{
+        max-width: 450px;
+        width: 100%;
+        height: 120px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    .number__box__location iframe{
+        max-width: 450px;
+        width: 100%;
+        height: 120px;;
+    }
+
+}
+
+@media (max-width: 380px){
+    .header .nav__list .nav__link{
+        font-size: 16px;
+    }
+
+    .number__box .number__box__text {
+        font-size: 16px;
+        letter-spacing: 0px;
+        margin-bottom: 3px;
+    }
+    .number__box .number__box__link {
+        font-size: 15px;
+        letter-spacing: 1px;
+    }
+    .header .number__box {
+        max-width: 450px;
+        width: 100%;
+        height: 60px;
+        border-radius: 20px;
+    }
+    .number__box .number__box__icons {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        font-size: 20px;
+    }
+    .number__box__telegram .number__box__text {
+        font-size: 16px;
+        letter-spacing: 1px;
+        margin-bottom: 3px;
+    }
+    .number__box__telegram .number__box__link {
+        font-size: 15px;
+        letter-spacing: 1px;
+    }
+    .number__box__telegram span {
+        position: absolute;
+        top: 20px;
+        left: 15px;
+        font-size: 30px;
+    }
+    .number__box__telegram {
+        max-width: 450px;
+        width: 100%;
+        height: 70px;
+    }
+    
+}
